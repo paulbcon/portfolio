@@ -99,7 +99,7 @@ const checkEmail = (input) => {
 };
 
 form.addEventListener("submit", e => {
-  e.preventDefault();
+ 
   let validation = false;
   let checkName = checkLength(username,2);
   let checkSubject = checkLength(subject,2);
@@ -111,10 +111,13 @@ form.addEventListener("submit", e => {
     validation = true;
   }
 
-  console.log(checkName,checkEmailAddress,checkSubject,checkMessage);
+  //console.log(checkName,checkEmailAddress,checkSubject,checkMessage);
   if (validation) {
     window.location.href="survey.html";
+  } else {
+    e.preventDefault();
   }
+
 
 })
 // End of Form Validation
