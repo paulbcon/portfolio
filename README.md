@@ -1,4 +1,4 @@
-# *Paul Contemplacion* [Portfolio](https://github.com/paulbcon/portfolio)
+# *Paul Contemplacion* [Portfolio](https://paulcontemplacion-perscholas.netlify.app/)
 This project is a requirement for *HTML/CSS/Javascript* Skill-Based Assessment (SBA) of __*Per Scholas 18-week Java Full Stack Developer course*__. It is a sample personal portfolio to show skills in creating a *responsive, interactive* web site.
 
 
