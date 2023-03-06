@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paul Contemplacion - Skills</title>
+
+    <style>
+      .progress-bars-wrapper {
+        margin-bottom: 10rem;
+        z-index: 400;
+      }
+      
+      
+
+      .progressbar {
+        width: 60rem;
+        height: 3rem;
+        background-color: #ccc;
+        margin: 1.5rem 0;
+        border-radius: 0.3rem;
+        box-shadow: 0.2rem 0.2rem 1rem #555;
+        position: relative;
+        z-index: 400;
+      }
+
+      .progress-text {
+        position: absolute;
+        left: 1rem;
+        font-size: 1.5rem;
+        color: #fff;
+        z-index: 400;
+        width:25rem;
+      }
+
+      .progress-text span {
+        margin: 0 0.5rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        z-index: 400;
+      }
+
+      .progress-percent {
+        width: 0;
+        height: 100%;
+        background-color: #e41c6f;
+        border-radius: 0.3rem;
+        transition: width 0.5s 0.5s ease-in-out;
+        z-index: 400;
+      }
+
+      
+    </style>
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="container">
+      <!- Background ->
+      <div class="page-bg"></div>
+      <!-- End Background -->
+
+      <!-- Navigation -->
+      <!-- Menu Icons-->
+      <div class="menu-icon center sticky">
+        <div class="menu-icon-line"></div>
+        <div class="menu-icon-line"></div>
+      </div>
+
+      <!-- End of Menu Icons-->
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="index.html#section-1" class="navbar-link">Home</a>
+        <a href="index.html#section-2" class="navbar-link">About Me</a>
+        <a href="showtable.html" class="navbar-link">Skills</a>        
+        <a href="index.html#section-4" class="navbar-link">Services</a>
+        <a href="index.html#section-3" class="navbar-link">Projects</a>
+      </nav>
+
+      <section class="main-section center">
+        <a href="#" class="logo">Paul Contemplacion</a>
+
+        <h1 class="section-heading">Skills</h1>
+        <div class="progress-bars-wrapper">
+          <table id="sampleTable" class="table">
+            <tbody>
+              <tr class="progressbar">
+                <td class="progress-text">HTML <span></span>%</td>
+                <td class="progress-percent"></td>
+              </tr>
+  
+              <tr class="progressbar">
+                <td class="progress-text">CSS <span></span>%</td>
+                <td class="progress-percent"></td>
+              </tr>
+
+              <tr class="progressbar">
+                <td class="progress-text">JavaScript <span></span>%</td>
+                <td class="progress-percent"></td>
+              </tr>
+
+              <tr class="progressbar">
+                <td class="progress-text">React <span></span>%</td>
+                <td class="progress-percent"></td>
+              </tr>
+
+              <tr class="progressbar">
+                <td class="progress-text">PHP <span></span>%</td>
+                <td class="progress-percent"></td>
+              </tr>
+
+              <tr class="progressbar">
+                <td class="progress-text">Java <span></span>%</td>
+                <td class="progress-percent"></td>
+              </tr>
+
+              <tr class="progressbar">
+                <td class="progress-text">Python <span></span>%</td>
+                <td class="progress-percent"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      
+      <!-- End of Section 2 -->
+    </div>
+    <!-- end of container  -->
+    
+    <script src="./js/showtable.js"></script>
+  </body>
+</html>

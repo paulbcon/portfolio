@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paul Contemplacion - Contact Me</title>
+
+    <style>
+      .typewriter h1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0.5em; /* Adjust as needed */
+        color: #fff;
+        animation: typing 3.5s steps(40, end), blink-caret 1s step-end infinite;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: orange;
+        }
+      }
+    </style>
+
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Mouse circle -->
+    <div class="mouse-circle"></div>
+    <div class="mouse-dot"></div>
+    <!-- End Mouse circle -->
+
+    <!-- Page Container -->
+    <div class="container">
+      <!- Background ->
+      <div class="page-bg"></div>
+      <!-- End Background -->
+
+      <!-- Navigation -->
+      <!-- Menu Icons-->
+      <div class="menu-icon center sticky">
+        <div class="menu-icon-line"></div>
+        <div class="menu-icon-line"></div>
+      </div>
+
+      <!-- End of Menu Icons-->
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="index.html#section-1" class="navbar-link">Home</a>
+        <a href="index.html#section-2" class="navbar-link">About Me</a>
+        <a href="showtable.html" class="navbar-link">Skills</a>
+        <a href="index.html#section-4" class="navbar-link">Services</a>
+        <a href="index.html#section-3" class="navbar-link">Projects</a>
+      </nav>
+      <!-- End of  Navbar -->
+
+      <!-- End of Navigation -->
+
+      <!- Main ->
+      <section class="main-section center">
+        <a href="#" class="logo">Paul Contemplacion</a>
+
+        <h1 class="section-heading">Contact Me</h1>
+
+        <!-- Form -->
+        <div class="form-wrapper">
+          <h2 class="form-heading">Let's Talk</h2>
+
+          <div class="typewriter">
+            <h1>
+              <strong
+                >Got a <em>question?</em> I'd love to hear from you.
+              </strong>
+            </h1>
+          </div>
+
+          <form class="contact-form center">
+            <input
+              type="text"
+              class="contact-form-input"
+              placeholder="Name"
+              id="name"
+              autocomplete="off"
+              pattern="[A-Za-z]"
+              name="name"
+            />
+            <p class="message">Error Message</p>
+            <input
+              type="text"
+              class="contact-form-input"
+              placeholder="Email"
+              id="email"
+              autocomplete="off"
+              name="email"
+            />
+            <p class="message">Error Message</p>
+            <input
+              type="text"
+              class="contact-form-input"
+              placeholder="Subject"
+              id="subject"
+              autocomplete="off"
+              name="subject"
+            />
+            <p class="message">Error Message</p>
+            <textarea
+              class="contact-form-input contact-form-textarea"
+              placeholder="Message"
+              id="message"
+              autocomplete="off"
+              name="message"
+            ></textarea>
+            <p class="message">Error Message</p>
+            <input type="submit" class="form-submit-btn" value="Send Request" />
+          </form>
+        </div>
+
+        <button class="project-hide-btn">&laquo;Close</button>
+        <!-- End of Form -->
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+          <a href="#" class="slideshow-link">
+            <img src="/images/social-icons/slideshow-img-1.png" />
+          </a>
+          <a href="#" class="slideshow-link">
+            <img src="/images/social-icons/slideshow-img-2.png" />
+          </a>
+          <a href="#" class="slideshow-link light">
+            <img src="/images/social-icons/slideshow-img-3.png" />
+          </a>
+          <a href="#" class="slideshow-link">
+            <img src="/images/social-icons/slideshow-img-4.png" />
+          </a>
+          <a href="#" class="slideshow-link">
+            <img src="/images/social-icons/slideshow-img-5.png" />
+          </a>
+        </div>
+        <!-- End Slideshow -->
+      </section>
+
+      <!- End Main ->
+    </div>
+    <!- End Page Container ->
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

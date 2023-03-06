@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paul Contemplacion - Contact Me</title>
+
+    <style>
+      .typewriter h1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 0.15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: 0.5em; /* Adjust as needed */
+        color: #fff;
+        animation: typing 3.5s steps(40, end), blink-caret 1s step-end infinite;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: orange;
+        }
+      }
+
+      .select {
+        width: 100%;
+        min-width: 15ch;
+        max-width: 30ch;
+        border: 1px solid var(--select-border);
+        border-radius: 0.25em;
+        padding: 0.25em 0.5em;
+        font-size: 1.25rem;
+        cursor: pointer;
+        line-height: 1.1;
+        background-color: #fff;
+        background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+      }
+    </style>
+
+    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="container">
+      <!- Background ->
+      <div class="page-bg"></div>
+      <!-- End Background -->
+
+      <!-- Navigation -->
+      <!-- Menu Icons-->
+      <div class="menu-icon center sticky">
+        <div class="menu-icon-line"></div>
+        <div class="menu-icon-line"></div>
+      </div>
+
+      <!-- End of Menu Icons-->
+
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="index.html#section-1" class="navbar-link">Home</a>
+        <a href="index.html#section-2" class="navbar-link">About Me</a>
+        <a href="showtable.html" class="navbar-link">Skills</a>
+        <a href="index.html#section-4" class="navbar-link">Services</a>
+        <a href="contact.html" class="navbar-link">Contact</a>
+        <a href="index.html#section-3" class="navbar-link">Projects</a>
+      </nav>
+      <!-- End of  Navbar -->
+
+      <!-- End of Navigation -->
+
+      <!- Main ->
+      <section class="main-section center">
+        <a href="#" class="logo">Paul Contemplacion</a>
+
+        <!-- Form -->
+        <div class="form-wrapper">
+          <h2 class="form-heading">Survey Questionnaire</h2>
+
+          <div class="typewriter">
+            <h1>
+              <strong
+                ><font color="white"
+                  >Thank you for taking the time to answer these questions.
+                </font>
+              </strong>
+            </h1>
+          </div>
+
+          <form class="survey-form center">
+            <table>
+
+                <tr>
+                    <td>
+                      <label class="surveylabel"
+                        >Did it take you more or less time than you expected to find what you were looking for on my website?</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                        <input
+                        type="radio"
+                        class="survey-form-input"
+                        id="lotless"
+                        autocomplete="off"
+                        name="timeneeded"
+                      />
+                      <span class="survey-text">A lot less time</span>
+                     
+                      <input
+                      type="radio"
+                      class="survey-form-input"
+                      id="littleless"
+                      autocomplete="off"
+                      name="timeneeded"
+                    />
+                    <span class="survey-text">A little less time</span>  
+                   
+                    <input
+                    type="radio"
+                    class="survey-form-input"
+                    id="expected"
+                    autocomplete="off"
+                    name="timeneeded"
+                  />
+                  <span class="survey-text">About what I expected</span>
+
+                  <input
+                  type="radio"
+                  class="survey-form-input"
+                  id="littlemore"
+                  autocomplete="off"
+                  name="timeneeded"
+                />
+                <span class="survey-text">A little more time</span>
+
+                <input
+                type="radio"
+                class="survey-form-input"
+                id="lotmore"
+                autocomplete="off"
+                name="timeneeded"
+              />
+              <span class="survey-text">A lot more time</span>
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><br /></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <label class="surveylabel"
+                        >How visually appealing is my website?</label
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                        <input
+                        type="radio"
+                        class="survey-form-input"
+                        id="extremely"
+                        autocomplete="off"
+                        name="appeal"
+                      />
+                      <span class="survey-text">Extremely appealing</span>
+
+                      <input
+                      type="radio"
+                      class="survey-form-input"
+                      id="very"
+                      autocomplete="off"
+                      name="appeal"
+                    />
+                    <span class="survey-text">Very appealing</span>
+
+                    <input
+                    type="radio"
+                    class="survey-form-input"
+                    id="somewhat"
+                    autocomplete="off"
+                    name="appeal"
+                  />
+                  <span class="survey-text">Somewhat appealing</span>
+
+                  <input
+                  type="radio"
+                  class="survey-form-input"
+                  id="notso"
+                  autocomplete="off"
+                  name="appeal"
+                />
+                <span class="survey-text">Not so appealing</span>
+
+                <input
+                type="radio"
+                class="survey-form-input"
+                id="notatall"
+                autocomplete="off"
+                name="appeal"
+              />
+              <span class="survey-text">Not at all appealing</span>
+                     
+                      
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><br /></td>
+                  </tr>
+                  
+
+
+
+
+              <tr>
+                <td>
+                  <label class="surveylabel"
+                    >How did you hear about this website?</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="radio"
+                    class="survey-form-input"
+                    id="socialmedia"
+                    autocomplete="off"
+                    name="media"
+                  />
+                  <span class="survey-text">Social Media</span>
+                  <input
+                    type="radio"
+                    class="survey-form-input"
+                    id="advertising"
+                    autocomplete="off"
+                    name="media"
+                  />
+                  <span class="survey-text">Advertising</span>
+                  <input
+                    type="radio"
+                    class="survey-form-input"
+                    id="searchengine"
+                    autocomplete="off"
+                    name="media"
+                  />
+                  <span class="survey-text">Search Engine</span>
+                  <input
+                    type="radio"
+                    class="survey-form-input"
+                    id="friends"
+                    autocomplete="off"
+                    name="media"
+                  />
+                  <span class="survey-text">Friends</span>
+                  <input
+                    type="radio"
+                    class="survey-form-input"
+                    id="others"
+                    autocomplete="off"
+                    name="media"
+                  />
+                  <span class="survey-text">Others</span>
+                </td>
+              </tr>
+              <tr>
+                <td><br /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="surveylabel">What browser(s) do you use?</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="checkbox"
+                    class="survey-form-input"
+                    id="chrome"
+                    autocomplete="off"
+                    name="browser"
+                  />
+                  <span class="survey-text">Google Chrome</span>
+                  <input
+                    type="checkbox"
+                    class="survey-form-input"
+                    id="firefox"
+                    autocomplete="off"
+                    name="browser"
+                  />
+                  <span class="survey-text">Firefox</span>
+                  <input
+                    type="checkbox"
+                    class="survey-form-input"
+                    id="edge"
+                    autocomplete="off"
+                    name="browser"
+                  /><span class="survey-text">Microsoft Edge</span>
+                  <input
+                    type="checkbox"
+                    class="survey-form-input"
+                    id="safari"
+                    autocomplete="off"
+                    name="browser"
+                  />
+                  <span class="survey-text">Safari</span>
+                  <input
+                    type="checkbox"
+                    class="survey-form-input"
+                    id="opera"
+                    autocomplete="off"
+                    name="browser"
+                  />
+                  <span class="survey-text">Opera</span>
+                </td>
+              </tr>
+              <tr>
+                <br />
+              </tr>
+              <tr>
+                <td>
+                  <label class="surveylabel">What is your age range?</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select class="select" name="agerange">
+                    <option id="1">18-24</option>
+                    <option id="1">25-34</option>
+                    <option id="1">35-44</option>
+                    <option id="1">45-54</option>
+                    <option id="1">55-64</option>
+                    <option id="1">65 and over</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <br />
+              </tr>
+              <tr>
+                <td><label class="surveylabel"> Do you have any other comments about how we can improve my website?</label></td>
+              </tr>
+              <tr>
+                <td><textarea class="survey-form-textarea"></textarea></td>
+              </tr>
+            </table>
+
+            <br />
+
+            <div class="center-div">
+              <input type="submit" class="survey-submit-btn" value="Submit" />
+            </div>
+          </form>
+        </div>
+
+        <button class="project-hide-btn">&laquo;Close</button>
+        <!-- End of Form -->
+
+        <!-- Slideshow -->
+        <div class="slideshow">
+          <a href="#" class="slideshow-link">
+            <img src="/images/social-icons/slideshow-img-1.png" />
+          </a>
+          <a href="#" class="slideshow-link">
+            <img src="/images/social-icons/slideshow-img-2.png" />
+          </a>
+          <a href="#" class="slideshow-link light">
+            <img src="/images/social-icons/slideshow-img-3.png" />
+          </a>
+          <a href="#" class="slideshow-link">
+            <img src="/images/social-icons/slideshow-img-4.png" />
+          </a>
+          <a href="#" class="slideshow-link">
+            <img src="/images/social-icons/slideshow-img-5.png" />
+          </a>
+        </div>
+        <!-- End Slideshow -->
+      </section>
+
+      <!- End Main ->
+    </div>
+    <!- End Page Container ->
+    <script src="./js/survey.js"></script>
+  </body>
+</html>
